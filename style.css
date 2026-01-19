@@ -324,32 +324,81 @@ nav {
 
 /* Footer */
 #footer{
-    /* padding: 120px 120px 0; */
     background-image: url("./images/hero-bg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     max-width: 1600px;
-    width: 100%;
+    height: 250px;
+    margin: 0 auto;
     
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    /* gap: 32px; */
   }
   
-  .footer-container {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+  /* .footer-title{
+    margin: 0 auto;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    gap: 32px;
-    padding-bottom: 120px;
-    /* width: auto;
-    height: 40px; */
-    
+    width: 410px;
+    height: 60px;
+    padding: 120px 120px;
+  } */
+  .footer-container {
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    justify-content:center;
+    align-items: center;
+    margin: 120px 120px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    /* line-height: 40px; */
+      /* gap: 45px; */
   }
-  .icons{
+
+.footer-logo{
+  margin: 0 auto;
+  /* justify-content:center;
+    align-items: center; */
+}
+
+  #icons {
     /* display: inline; */
-    gap: 40px;
-    justify-content: center;
-    padding-left: 20px;
+    gap: 15px;
+    width: 1260px;
+    height: 24px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content:center;
+    align-items: center;
     color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
   
+  }
+  .footer-copy_text{
+    /* width: 540px; */
+    font-size: 1rem;
+    font-weight: 400;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-display{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+ 
+  .footer-icon-img{
+        width: 20px;
+        height: 20px;
+        display: inline;
   }

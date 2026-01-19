@@ -323,3 +323,33 @@ nav {
 /* Meet_host Related Styles */
 
 /* Footer */
+#footer{
+    /* padding: 120px 120px 0; */
+    background-image: url("./images/hero-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 1600px;
+    width: 100%;
+    
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding-bottom: 120px;
+    /* width: auto;
+    height: 40px; */
+    
+  }
+  .icons{
+    /* display: inline; */
+    gap: 40px;
+    justify-content: center;
+    padding-left: 20px;
+    color: #ffffff;
+  
+  }

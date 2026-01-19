@@ -3,5 +3,117 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-  
+    
 }
+
+body{
+    background-color:rgba(26,11,46,1)
+}
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+  }
+
+  .color-dark_purple {
+    color:rgba(26,11,46,1)
+  }
+
+  .color-light_purple {
+    color:rgba(65,37,103,1)
+  }
+  
+.color-white{
+    color:#ffffff;
+}
+
+.color_gradient{
+    /* color code- rgba(251,9,180,1),rgba(145,0,248,1); */
+    color:color-mix(in lab, rgba(145,0,248,1) 35%, rgba(251,9,180,1) 65%)
+}
+
+  .btn {
+    border: 10px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color:white;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .text-center{
+    display: flex;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .btn-display{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #ffffff;
+    
+  }
+
+  .btn-img{
+        width: 20px;
+        height: 20px;
+        display: inline;
+        /* background-image: linear-gradient(rgba(247,233,63,0.0),rgba(251,9,180,0.0),rgba(145,0,248,0.0)); */
+        background-color: linear-gradient(rgba(247,233,63,0.5),rgba(251,9,180,0.5),rgba(145,0,248,0.5));
+  }
+
+/* Navbar Related Styles */
+nav {
+    width: 85%;
+    max-width: 1600px;
+    margin: 16px auto;
+    border-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 16px 120px;
+    background-color: rgba(26,11,46,1);
+  }
+
+  nav .menu {
+    display: flex;
+    list-style-type: none;
+    gap:34px;
+    align-items: center;
+  }
+
+  nav .menu a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    font-weight: 500;
+  }
+/* nav .logo img {
+  width: 74%;
+  margin: 16px;
+} */
+#button-nav .btn{
+    padding-right: 16px 200px;
+    background-image: linear-gradient(rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1));
+}
+
+.logo h2 .menu #button-nav .btn{
+    display: flex;
+    gap: 346px;
+    align-items: center;   
+}
+/* Hero Related Styles */
+
+/* Podcast Related Styles */
+
+/* Choose_Techwave Related Styles */
+
+/* Features Related Styles */
+
+/* Meet_host Related Styles */
+
+/* Footer */

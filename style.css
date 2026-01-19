@@ -41,6 +41,7 @@ body{
     color:white;
     cursor: pointer;
     text-align: center;
+    background-image: linear-gradient(rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1));
   }
 
   .text-center{
@@ -92,13 +93,10 @@ nav {
     align-items: center;
     font-weight: 500;
   }
-/* nav .logo img {
-  width: 74%;
-  margin: 16px;
-} */
+
 #button-nav .btn{
     padding-right: 16px 200px;
-    background-image: linear-gradient(rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1));
+    /* background-image: linear-gradient(rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1)); */
 }
 
 .logo h2 .menu #button-nav .btn{
@@ -106,8 +104,128 @@ nav {
     gap: 346px;
     align-items: center;   
 }
-/* Hero Related Styles */
+/* Hero banner Related Styles */
+#hero-banner {
+    /* border: 1px solid red; */
+    background-image: url("./images/hero-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 1600px;
+    width: 100%;
+    height: 760px;
+    position: relative;
+    margin: 0 auto;
+    
+}
+ .banner-content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 650px;
+  /* Add styling for the overlay content (e.g., color, alignment) */
+  /* background-color: rgba(0, 0, 0, 0.5); Semi-transparent background for readability */
+  /* color: black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* Vertically center content */
+  align-items: center;      /* Horizontally center content */
+  text-align: center;
+  
 
+  }
+
+  .banner-content .banner-inside-content{
+   margin: 101px 525px; 
+   padding-top: 20px;
+   
+  }
+
+  .banner-inside-content .banner-inside-img{
+    border-radius: 8px;
+    width: 350px;
+    height: 350px;
+    border: 100px 625px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgba(42,24,108,1);
+  }
+
+  /* .banner-content .banner-inside-content h1{
+    font-size: 3.75rem;
+    font-weight: 800;
+    line-height: 0px;
+    text-align: center;
+    gap: 40px;
+  }
+  */
+
+  .btn .text-center{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 16px;
+    margin-bottom: 84px auto;
+    line-height: 50px;
+    
+  } 
+
+
+#btn-2{
+  background-color:rgb(69, 66, 66,0.5);
+  color: green;
+  border: 1px solid white;
+  background: none;
+  padding: 12px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+ }
+ 
+  #hero-banner .banner-content .banner-inside-content .banner-inside-para{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .banner-inside-para h1{
+    font-size: 3.75rem;
+    font-weight: 800;
+    /* line-height: 0px; */
+    text-align: center;
+    gap: 40px;
+  }
+.banner-inside-para p{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1rem; 
+    /* padding-bottom: 20px; */
+    text-decoration: none;
+    gap: 8px;
+  }
+
+ .overlay-banner-img{
+    position: fixed; 
+    width: 80px;
+    height: 120px;
+    top: 270px;
+    left: 116px;
+    right: 116px;
+    bottom: 97px;
+    z-index: 2;
+    margin: 0 auto;
+ 
+  /* object-fit: cover;  */
+  /* margin: 77px 116px 97px; */
+  /* padding: 8px 41px 16px; */
+  }
 /* Podcast Related Styles */
 
 /* Choose_Techwave Related Styles */

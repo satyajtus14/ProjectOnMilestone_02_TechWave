@@ -226,6 +226,23 @@ nav {
   /* margin: 77px 116px 97px; */
   /* padding: 8px 41px 16px; */
   }
+
+  .corner-ribbon {
+    position: absolute;
+    top: 120px;
+    right: 90px;
+    left: 900px;
+    background: #00FF88;
+    color: white;
+    padding: 8px 16px;
+    transform: rotate(-360deg);
+    font-size: 1rem;
+    /* font-weight: 400; */
+    width: 75px;
+    height: 35px;
+    line-height: 10px;
+    border-radius: 20px;
+  }
 /* Podcast Related Styles */
 
 /* Choose_Techwave Related Styles */

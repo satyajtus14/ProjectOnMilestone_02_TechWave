@@ -66,6 +66,9 @@ body{
         background-color: linear-gradient(rgba(247,233,63,0.5),rgba(251,9,180,0.5),rgba(145,0,248,0.5));
   }
 
+  .display-flex{
+    display: flex;
+  }
 /* Navbar Related Styles */
 nav {
     width: 85%;
@@ -211,16 +214,22 @@ nav {
     gap: 8px;
   }
 
- .overlay-banner-img{
-    position: fixed; 
+ .banner-inside-content .overlay-banner-img{
+    position: absolute; 
+    /* position: sticky; */
     width: 80px;
     height: 120px;
-    top: 270px;
-    left: 116px;
-    right: 116px;
-    bottom: 97px;
+    top: 200px;
+    left: 750px;
+    right: 700px;
+    bottom: 390px;
     z-index: 2;
-    margin: 0 auto;
+    /* top: 330px;
+    left: 250px;
+    right: 200px;
+    bottom: 97px; */
+    
+    /* margin: 0 auto; */
  
   /* object-fit: cover;  */
   /* margin: 77px 116px 97px; */
@@ -230,8 +239,8 @@ nav {
   .corner-ribbon {
     position: absolute;
     top: 120px;
-    right: 90px;
-    left: 900px;
+    right: 120px;
+    left: 880px;
     background: #00FF88;
     color: white;
     padding: 8px 16px;
@@ -243,8 +252,70 @@ nav {
     line-height: 10px;
     border-radius: 20px;
   }
-/* Podcast Related Styles */
 
+
+/* Podcast Related Styles */
+.Podcast-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    /* margin: 50px 200px 538px; */
+    padding-left: 200px;
+    margin: 0 auto;
+    width: 1200px;
+    line-height: 75px;
+  }
+  #Podcast-description-1{
+    line-height: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    padding-right: 300px;
+  }
+
+
+  .Podcast-container {
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   padding-top: 50px;
+   padding-left: 650px;
+
+   /* padding-bottom: 538px; */
+   /* margin: auto 290px; */
+   /* gap: 124px; */
+  }
+
+
+  
+  .Podcast-card{
+    border: 1px solid rgba(26,11,46,1);
+    width: 1200px;
+    height: 94px;
+    border-radius: 8px;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #00FF88;;
+  }
+  .Podcast-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #00FF88;;
+  }
+  
+  .Podcast-name{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #00FF88;;
+  }
+  
+  #Podcast-description{
+    max-width: 540px;
+    color: #00FF88;;
+  }
 /* Choose_Techwave Related Styles */
 
 /* Features Related Styles */

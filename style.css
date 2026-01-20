@@ -107,6 +107,35 @@ nav {
     gap: 346px;
     align-items: center;   
 }
+/* Animation on logo text */
+.logo h2 {
+  animation: logoSlideIn 1.5s ease-out forwards;
+}
+
+@keyframes logoSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+responsive-button {
+  width: 150px;
+  height: 50px;
+  background-color: rgba(26,11,46,1); /* Default background color */
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  background-image: url('./images/icons/hamburger-menu.png'); /* Default image */
+  background-size: cover; /* Resizes the image to cover the entire container */
+  background-repeat: no-repeat;
+  background-position: center;
+ 
+}
 /* Hero banner Related Styles */
 #hero-banner {
     /* border: 1px solid red; */
@@ -318,87 +347,6 @@ nav {
     color: #00FF88;;
   }
 /* Choose_Techwave Related Styles */
-/* #tech_wave {
-  border: 1px solid #00FF88;
-   width: 1440px;
-   height: 1121px;
-   
-   align-items: center;
-   justify-content: flex-start;
-   flex-direction: column;
-   margin: 0 auto;
-   color: #ffffff;
-   
-}
-
-  .container_title{
-    width: 1200px;
-    height: 55px;
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 58px;
-    text-align: center;
-    padding: 120px 200px;
-  }
-
-.container{
-  border: 2px solid rgba(65,37,103,1);
-  background-color: rgba(65,37,103,1);
-  color: #ffffff;
-  padding: 120px 200px;
-  border-radius: 8px;
-  gap: 40px;
-}
-
-
-.nav_grid {
-  border: 40px;
-  padding: 40px;
-  width: 250px;
-  height: 500px;
-  gap: 16px;
-  grid-area: navbar;
-}
-
-.main_grid {
-  border: 40px;
-  padding: 40px;
-  width: 790px;
-  height: 225px;
-  gap: 16px;
-  grid-area: main;
-}
-
-#sidebar {
-  border: 40px;
-  padding: 40px;
-  width: 790px;
-  height: 225px;
-  gap: 16px;
-  grid-area:sidebar;
-}
-
-/* header {
-  grid-area: header;
-} */
-
-/* #advertise {
-  border: 40px;
-  padding: 40px;
-  width: 350px;
-  height: 150px;
-  /* height: 270px; */
-  /* gap: 16px;
-  grid-area: advertise;
-}
-.footer_grid {
-  border: 40px;
-  padding: 40px;
-  width: 790px;
-  height: 150px;
-  gap: 16px;
-  grid-area: footer;
-}  */ 
 #tech_wave {
   display: flex; 
   border: 1px solid rgba(65,37,103,1);
@@ -548,9 +496,9 @@ nav {
   margin: 0 auto;
 }
 
-.feature_card img{
+/* .feature_card img{
   width: 100%;
-}
+} */
 
 .video-container {
   position: relative;
@@ -579,8 +527,8 @@ nav {
 }
 
 .ply-img{
-      width: 3px;
-      height: 3px;
+      width: 20px;
+      height: 20px;
       display: inline;
       color: #00FF88;
       
@@ -734,4 +682,107 @@ nav {
         display: inline;
   }
 
+  /* Responsive Media Query */
+  @media screen and (min-width: 576px) and (max-width: 992px) {
+    nav {
+      width: 95%;
+      flex-direction: column;
+      gap: 16px;
+
+    }
+  responsive-button {
+        background-image: url('./images/icons/hamburger-menu.png'); 
+        width: 24px; 
+        height: 24px;
+    }
+    #hero-banner {
+      /* height: auto; */
+      width: 440px;
+      height: 460px;
+      padding: 40px 20px;
+    }
   
+    .banner-content {
+      position: static;
+      height: auto;
+    }
+  
+    .banner-content .banner-inside-content {
+      margin: 0;
+      padding: 20px;
+    }
+  
+    .banner-inside-content .banner-inside-img {
+      width: 220px;
+      height: 220px;
+    }
+  
+    .Podcast-title,
+    #Podcast-description-1 {
+      width: 100%;
+      padding: 0 20px;
+      text-align: center;
+    }
+  
+    .Podcast-container {
+      grid-template-columns: 2fr;
+      padding-left: 0;
+      gap: 20px;
+    }
+  
+    #tech_wave {
+      width: 100%;
+      height: auto;
+    }
+  
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "navbar"
+        "sidebar"
+        "main"
+        "advertise"
+        "footer";
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .nav_grid,
+    .main_grid,
+    #sidebar,
+    #advertise,
+    .footer_grid {
+      width: 100%;
+    }
+  
+    .feature_container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+      gap: 16px;
+      justify-content: center;
+    }
+  
+    .host-info {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      text-align: center;
+    }
+  
+    .host-img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    #footer {
+      width: 100%;
+      height: auto;
+    }
+  
+    #icons {
+      width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    
+  }

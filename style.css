@@ -109,7 +109,7 @@ nav {
 }
 /* Animation on logo text */
 .logo h2 {
-  animation: logoSlideIn 1.5s ease-out forwards;
+  animation: logoSlideIn 1.3s ease-out forwards;
 }
 
 @keyframes logoSlideIn {

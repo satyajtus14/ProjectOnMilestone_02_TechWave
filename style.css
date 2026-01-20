@@ -317,6 +317,198 @@ nav {
     color: #00FF88;;
   }
 /* Choose_Techwave Related Styles */
+/* #tech_wave {
+  border: 1px solid #00FF88;
+   width: 1440px;
+   height: 1121px;
+   
+   align-items: center;
+   justify-content: flex-start;
+   flex-direction: column;
+   margin: 0 auto;
+   color: #ffffff;
+   
+}
+
+  .container_title{
+    width: 1200px;
+    height: 55px;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 58px;
+    text-align: center;
+    padding: 120px 200px;
+  }
+
+.container{
+  border: 2px solid rgba(65,37,103,1);
+  background-color: rgba(65,37,103,1);
+  color: #ffffff;
+  padding: 120px 200px;
+  border-radius: 8px;
+  gap: 40px;
+}
+
+
+.nav_grid {
+  border: 40px;
+  padding: 40px;
+  width: 250px;
+  height: 500px;
+  gap: 16px;
+  grid-area: navbar;
+}
+
+.main_grid {
+  border: 40px;
+  padding: 40px;
+  width: 790px;
+  height: 225px;
+  gap: 16px;
+  grid-area: main;
+}
+
+#sidebar {
+  border: 40px;
+  padding: 40px;
+  width: 790px;
+  height: 225px;
+  gap: 16px;
+  grid-area:sidebar;
+}
+
+/* header {
+  grid-area: header;
+} */
+
+/* #advertise {
+  border: 40px;
+  padding: 40px;
+  width: 350px;
+  height: 150px;
+  /* height: 270px; */
+  /* gap: 16px;
+  grid-area: advertise;
+}
+.footer_grid {
+  border: 40px;
+  padding: 40px;
+  width: 790px;
+  height: 150px;
+  gap: 16px;
+  grid-area: footer;
+}  */ 
+#tech_wave {
+  display: flex; 
+  border: 1px solid #00FF88;
+  width: 1600px;
+  height: 1121px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.container_title {
+  width: 1200px;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 58px;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.container {
+  display: grid;
+  width: 1200px;
+  background-color: rgba(65,37,103,1);
+  color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  gap: 20px;
+
+  grid-template-columns: 400px 1fr 1fr;
+  grid-template-rows: auto auto auto;
+
+  grid-template-areas: 
+    "navbar sidebar sidebar"
+    "navbar main main"
+    "footer footer advertise";
+}
+
+/* Shared styles */
+.nav_grid,
+.main_grid,
+#sidebar,
+#advertise,
+.footer_grid {
+  border: 2px solid #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+  justify-content: left;
+  text-align: left;
+  background-color: rgba(65,37,103,1);
+  
+}
+/* Icons Images */
+.nav_icon,
+.side_bar_icon,
+.footer_icon,
+.main_icon,
+.advertise_icon{
+  width: 60px;
+  height: auto;
+  object-fit: contain;
+}
+/* Headings */
+.nav_grid h2,
+#sidebar h2, 
+#advertise h2, 
+.main_grid h2
+.footer_grid h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* Paragraphs */
+.nav_grid p,
+#sidebar p,
+#advertise p, 
+.main_grid p,
+.footer_grid p
+{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+/* Grid areas */
+.nav_grid {
+  grid-area: navbar;
+}
+
+#sidebar {
+  grid-area: sidebar;
+}
+
+.main_grid {
+  grid-area: main;
+}
+
+.footer_grid {
+  grid-area: footer;
+}
+
+#advertise {
+  grid-area: advertise;
+}
+
 
 /* Features Related Styles */
 
@@ -330,23 +522,10 @@ nav {
     background-repeat: no-repeat;
     max-width: 1600px;
     height: 250px;
-    margin: 0 auto;
-    
-    /* flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-    /* gap: 32px; */
+    margin: 0 auto;  
+
   }
   
-  /* .footer-title{
-    margin: 0 auto;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 410px;
-    height: 60px;
-    padding: 120px 120px;
-  } */
   .footer-container {
     display: grid;
     grid-template-rows: repeat(4,1fr);
@@ -402,3 +581,5 @@ nav {
         height: 20px;
         display: inline;
   }
+
+  

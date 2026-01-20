@@ -7,7 +7,8 @@
 }
 
 body{
-    background-color:rgba(26,11,46,1)
+    background-color:rgba(26,11,46,1);
+    
 }
 
 .inter-font {
@@ -391,8 +392,8 @@ responsive-button {
 .main_grid,
 #sidebar,
 #advertise,
-.footer_grid {
-  border: 2px solid #ffffff;
+.footer_grid { 
+  border: 1px solid rgb(48, 23, 84);
   padding: 40px;
   border-radius: 10px;
   display: flex;
@@ -401,7 +402,7 @@ responsive-button {
   align-items: flex-start;
   justify-content: left;
   text-align: left;
-  background-color: rgba(65,37,103,1);
+  background-color: rgba(26,11,46,1);
   
 }
 /* Icons Images */
@@ -485,7 +486,7 @@ responsive-button {
 .feature_card{
   width: 280px;
   height: auto;
-  border: 2px solid coral;
+  border: 2px solid #412567;
   border-radius: 24px;
   padding: 5px;
   /* box-shadow: 10px 10px 10px rgb(190, 179, 179); */
@@ -616,13 +617,15 @@ responsive-button {
 #footer{
     background-image: url("./images/hero-bg.png");
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
+    background-size:cover;
+    
     /* max-width: 1600px; */
-    width:1440px;
+    max-width:1440px;
     height: 250px;
     margin: 0 auto; 
-    /* border: 1px solid rgba(65,37,103,1);  */
+    border: 1px solid rgba(65,37,103,1); 
 
   }
   
@@ -631,9 +634,9 @@ responsive-button {
     grid-template-rows: repeat(4,1fr);
     justify-content:center;
     align-items: center;
-    margin: 120px 120px;
-    padding-top: 20px;
-    padding-bottom: 100px;
+    /* margin: 20px 20px; */
+    padding-top: 60px;
+    /* padding-bottom: 5px; */
     /* line-height: 40px; */
       /* gap: 45px; */
   }
@@ -646,8 +649,8 @@ responsive-button {
 
   #icons {
     /* display: inline; */
-    gap: 15px;
-    width: 1260px;
+    gap: 10px;
+    width: 700px;
     height: 24px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -655,13 +658,13 @@ responsive-button {
     align-items: center;
     color: #ffffff;
     font-size: 1rem;
-    font-weight: 500;
-    line-height: 20px;
+    font-weight: 400;
+    line-height: 10px;
     text-align: center;
   
   }
   .footer-copy_text{
-    /* width: 540px; */
+    width: 600px;
     font-size: 1rem;
     font-weight: 400;
     gap: 30px;
